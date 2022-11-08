@@ -154,7 +154,7 @@ path = "{}.rs""#,
                 Command::new("cargo")
                     .args(&["clippy", "--manifest-path", CLIPPY_CARGO_TOML_PATH])
                     .args(RUSTC_COLOR_ARGS)
-                    .args(&["--", "-D", "warnings","-D","clippy::float_cmp"])
+                    .args(&["--", "-D", "warnings", "-D", "clippy::float_cmp"])
                     .output()
             }
         }
@@ -300,7 +300,7 @@ mod test {
                 important: false,
             },
             ContextLine {
-                line: "// I AM NOT DONE".to_string(),
+                line: "".to_string(),
                 number: 3,
                 important: true,
             },
